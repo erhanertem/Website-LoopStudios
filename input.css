@@ -2,14 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-#hero {
-	background-image: url('../images/desktop/image-hero.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+@layer base {
+	h5 {
+		@apply absolute bottom-4 w-52 px-6 duration-200 group-hover:scale-110 group-hover:text-black md:bottom-8 md:px-10;
+	}
 }
-@media (max-width: 576px) {
+
+@layer components {
+	.btn {
+		@apply my-0 border-2 border-black px-10 py-2 font-alata font-bold uppercase tracking-widest hover:bg-black hover:text-white;
+	}
+
 	#hero {
-		background-image: url('../images/mobile/image-hero.jpg');
-		background-position: center;
+		background-image: url('../images/desktop/image-hero.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	@media (max-width: 576px) {
+		#hero {
+			background-image: url('../images/mobile/image-hero.jpg');
+			background-position: center;
+		}
+	}
+
+	.items-container {
+		@apply mb-6 flex w-full flex-col justify-between space-y-6 text-2xl uppercase text-white md:mb-8 md:flex-row md:space-x-8 md:space-y-0;
+	}
+
+	.item {
+		@apply relative overflow-hidden md:w-1/4;
+	}
+
+	.item-gradient {
+		@apply absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
 	}
 }

@@ -8,6 +8,11 @@ module.exports = {
 			lg: '976px',
 			xl: '1440px',
 		},
+
+		letterSpacing: {
+			widest: '0.3em',
+		},
+
 		extend: {
 			fontFamily: {
 				sans: ['Josefin Sans', 'sans-serif'],
