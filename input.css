@@ -65,16 +65,20 @@
 		transform: translateY(14px);
 	}
 	.open {
-		transform: rotate(90deg)
+		transform: rotate(90deg);
 	}
 	.open .hamburger-top {
-		transform: rotate(45deg) translateY(6px) translateX(6px)
+		transform: rotate(45deg) translateY(6px) translateX(6px);
 	}
 	.open .hamburger-middle {
-		display: none; 
+		display: none;
 		/* @apply hidden */
 	}
-		.open .hamburger-bottom {
-		transform: rotate(-45deg) translateY(6px) translateX(-6px)
+	.open .hamburger-bottom {
+		transform: rotate(-45deg) translateY(6px) translateX(-6px);
+	}
+
+	.blurred {
+		@apply bg-black/70 backdrop-blur-lg backdrop-filter;
 	}
 }
