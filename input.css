@@ -36,4 +36,45 @@
 	.item-gradient {
 		@apply absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70;
 	}
+
+	/* Hamburger Menu */
+	.hamburger {
+		cursor: pointer;
+		width: 24px;
+		height: 24px;
+		transition: all 0.25s;
+		position: relative;
+	}
+
+	.hamburger-top,
+	.hamburger-middle,
+	.hamburger-bottom {
+		position: absolute;
+		width: 24px;
+		height: 2px;
+		top: 0;
+		left: 0;
+		background: #fff;
+		transform: rotate(0);
+		transition: all 0.5s;
+	}
+	.hamburger-middle {
+		transform: translateY(7px);
+	}
+	.hamburger-top {
+		transform: translateY(14px);
+	}
+	.open {
+		transform: rotate(90deg)
+	}
+	.open .hamburger-top {
+		transform: rotate(45deg) translateY(6px) translateX(6px)
+	}
+	.open .hamburger-middle {
+		display: none; 
+		/* @apply hidden */
+	}
+		.open .hamburger-bottom {
+		transform: rotate(-45deg) translateY(6px) translateX(-6px)
+	}
 }
