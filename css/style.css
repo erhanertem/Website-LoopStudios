@@ -815,6 +815,18 @@ h5 {
   top: 12rem;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -999,6 +1011,10 @@ h5 {
 
 .h-8 {
   height: 2rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-44 {
@@ -1557,6 +1573,12 @@ h5 {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2130,8 +2152,21 @@ h5 {
   padding-bottom: 5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .pr-0 {
   padding-right: 0px;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pt-40 {
+  padding-top: 10rem;
 }
 
 .text-left {
@@ -2201,6 +2236,11 @@ h5 {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
@@ -2652,6 +2692,11 @@ h5 {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-pink-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 72 153 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
